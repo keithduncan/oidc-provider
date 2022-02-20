@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  keyset_id: 1
+  private_key: MyText
+  public_key: MyText
+
+two:
+  keyset_id: 1
+  private_key: MyText
+  public_key: MyText

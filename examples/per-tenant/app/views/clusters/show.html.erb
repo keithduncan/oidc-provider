@@ -1,0 +1,13 @@
+<h1>Cluster</h1>
+<table>
+	<tr>
+		<td>Name</td>
+		<td>OIDC Provider URL</td>
+		<td>Issue Token</td>
+	</tr>
+	<tr>
+		<td><%= @cluster.name %></td>
+		<td><%= link_to "OpenID Connect Provider", organization_cluster_oidc_path(cluster_id: @cluster) %></td>
+		<td><%= link_to "Issue Token", organization_cluster_token_path(cluster_id: @cluster) %></td>
+	</tr>
+</table>

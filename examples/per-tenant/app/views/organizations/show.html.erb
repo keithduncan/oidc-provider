@@ -1,0 +1,26 @@
+<h3>Organization</h3>
+<table>
+	<tr>
+		<td>Name</td>
+		<td>Slug</td>
+	</tr>
+	<tr>
+		<td><%= @organization.name %></td>
+		<td><%= @organization.slug %></td>
+	</tr>
+</table>
+
+<h3>Clusters</h3>
+
+<table>
+	<tr>
+		<td>Cluster Name</td>
+		<td>Link</td>
+	</tr>
+	<% @organization.clusters.each do |cluster| %>
+	<tr>
+		<td><%= cluster.name %>
+		<td><%= link_to 'Show', organization_cluster_path(organization_id: @organization, id: cluster) %></td>
+	</tr>
+	<% end %>
+</table>

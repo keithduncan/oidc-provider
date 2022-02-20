@@ -1,0 +1,13 @@
+<h1>Organization</h1>
+<table>
+	<tr>
+		<td>Name</td>
+		<td>Slug</td>
+		<td>OIDC Provider URL</td>
+	</tr>
+	<tr>
+		<td><%= @organization.name %></td>
+		<td><%= @organization.slug %></td>
+		<td><%= link_to "OpenID Connect Provider", organization_oidc_path(@organization) %></td>
+	</tr>
+</table>
