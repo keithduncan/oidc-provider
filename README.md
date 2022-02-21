@@ -7,7 +7,7 @@ Tenants can be arbitrarily deep in your object model. For example, your keyset
 could be service-wide, per-organisation, or per-organisation resource. Whatever
 makes sense to be a root of trust in your object model.
 
-<img width="1129" alt="Screen Shot 2022-02-21 at 11 08 37" src="https://user-images.githubusercontent.com/22101/154870621-178cc98c-e83a-44b9-9877-2d124e5efefa.png">
+<img width="1129" alt="Diagram of a data model showing different OIDC keyset placements, service-wide, per-org, and per-org resource" src="https://user-images.githubusercontent.com/22101/154870621-178cc98c-e83a-44b9-9877-2d124e5efefa.png">
 
 While you can use a single service-wide root of trust for your provider and
 disambiguate principals using a subject claim (a la GitHub Actions), this engine
